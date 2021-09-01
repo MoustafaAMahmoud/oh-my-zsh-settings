@@ -20,7 +20,6 @@ function precmd () {
     echo -ne "$window_title"
 }
 #ZLE_RPROMPT_INDENT=0
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #ZSH_THEME="spaceship"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -88,18 +87,7 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%F{white}\u256D\u2500%f'
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-plugins=(git
-		zsh-autosuggestions 
-		aws
-		zsh-completions
-    python
-    git
-    virtualenv
-    autojump
-    fzf
-		)
+plugins=(git zsh-autosuggestions aws zsh-completions python git virtualenv autojump fzf)
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_MANUAL_REBIND=1
@@ -120,4 +108,3 @@ COMPLETION_WAITING_DOTS=true
 
 #alias python='python3'
 #alias pip='pip3'
-source ~/.bashrc
